@@ -1,6 +1,6 @@
 # React Tip Calculator
 
-Simple tip calculator built with React 18.
+Simple tip calculator built with React 18.2.0
 
 ## Includes
 
