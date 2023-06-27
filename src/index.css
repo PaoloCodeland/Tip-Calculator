@@ -1,0 +1,123 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 62.5%;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    font-size: 1.8rem;
+}
+
+.app {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 6rem 3rem;
+}
+
+h1 {
+    padding: 0 0 3rem;
+    margin: 0 0 4rem;
+    font-size: 5rem;
+    line-height: 1.1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.field-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+label {
+    width: calc(50% - 1rem);
+}
+input,
+select {
+    width: calc(50% - 1rem);
+    height: 4rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+option {
+    background: #000;
+}
+
+.display {
+    margin: 3rem 0 4rem;
+    padding-top: 3rem;
+    font-size: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.button {
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.35rem 2rem 1.25rem;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid;
+    cursor: pointer;
+}
+.button > span {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+@media (max-width: 767px) {
+    .app {
+        padding: 3rem 1.5rem;
+    }
+
+    h1 {
+        margin: 0 0 3rem;
+        font-size: 3.5rem;
+    }
+
+    .field-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    label,
+    input,
+    select {
+        width: 100%;
+    }
+
+    .display {
+        margin: 4rem 0 3rem;
+        font-size: 2.1rem;
+    }
+
+    .button {
+        padding: 1.25rem 1.5rem 1.15rem;
+    }
+    .button > span {
+        font-size: 1.4rem;
+    }
+}
